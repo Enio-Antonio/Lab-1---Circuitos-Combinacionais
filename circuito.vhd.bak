@@ -1,0 +1,19 @@
+entity circuito is
+	port(A, B, C : in bit; S : out bit);
+end circuito;
+
+architecture behav of circuito is
+	signal S1: bit;
+	signal S2: bit;
+	component PortaAnd is 
+		port(en1, en2 : in bit; saida_and: out bit);
+	end component;
+	component PortaOr is 
+		port(input1, input2: in bit; saida_or: out bit;)
+	end component
+begin 
+	u1: PortaAnd port map(en1 => A, en2 => B, saida_and => S1);
+	u2: PortaAnd port map(en1 => B, en2 => C, saida_and => S2);
+	u3: PortaOr port map(input1 => S1, input2 => S2, saida_or => S);
+end architecture behav;
+
