@@ -1,5 +1,5 @@
 Simulator report for circuito
-Tue Oct 01 14:18:41 2024
+Tue Oct 08 11:08:38 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -45,12 +45,11 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 7 nodes      ;
+; Simulation Netlist Size     ; 26 nodes     ;
 ; Simulation Coverage         ;       0.00 % ;
 ; Total Number of Transitions ; 0            ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
-; Device                      ; EP2C5T144C6  ;
 +-----------------------------+--------------+
 
 
@@ -59,7 +58,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------------+-------------------------------------------------------------------+---------------+
 ; Option                                                                                     ; Setting                                                           ; Default Value ;
 +--------------------------------------------------------------------------------------------+-------------------------------------------------------------------+---------------+
-; Simulation mode                                                                            ; Timing                                                            ; Timing        ;
+; Simulation mode                                                                            ; Functional                                                        ; Timing        ;
 ; Start time                                                                                 ; 0 ns                                                              ; 0 ns          ;
 ; Simulation results format                                                                  ; VWF                                                               ;               ;
 ; Vector input source                                                                        ; C:/Users/enioa/Desktop/Aulas/aula_01_10/output_files/Waveform.vwf ;               ;
@@ -96,12 +95,12 @@ Please use Quartus II 64-Bit to view the waveform report data.
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
 ; Total coverage as a percentage                      ;       0.00 % ;
-; Total nodes checked                                 ; 7            ;
-; Total output ports checked                          ; 7            ;
+; Total nodes checked                                 ; 26           ;
+; Total output ports checked                          ; 26           ;
 ; Total output ports with complete 1/0-value coverage ; 0            ;
-; Total output ports with no 1/0-value coverage       ; 7            ;
-; Total output ports with no 1-value coverage         ; 7            ;
-; Total output ports with no 0-value coverage         ; 7            ;
+; Total output ports with no 1/0-value coverage       ; 26           ;
+; Total output ports with no 1-value coverage         ; 26           ;
+; Total output ports with no 0-value coverage         ; 26           ;
 +-----------------------------------------------------+--------------+
 
 
@@ -114,35 +113,73 @@ The following table displays output ports that toggle between 1 and 0 during sim
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+----------------------------------------------------------------------------------------+
-; Missing 1-Value Coverage                                                               ;
-+----------------------------------+----------------------------------+------------------+
-; Node Name                        ; Output Port Name                 ; Output Port Type ;
-+----------------------------------+----------------------------------+------------------+
-; |circuito|PortaOr:u4|saida_or~0  ; |circuito|PortaOr:u4|saida_or~0  ; combout          ;
-; |circuito|PortaOr4:u9|saida_or~0 ; |circuito|PortaOr4:u9|saida_or~0 ; combout          ;
-; |circuito|sa1                    ; |circuito|sa1                    ; padio            ;
-; |circuito|sa2                    ; |circuito|sa2                    ; padio            ;
-; |circuito|b                      ; |circuito|b~corein               ; combout          ;
-; |circuito|a                      ; |circuito|a~corein               ; combout          ;
-; |circuito|c                      ; |circuito|c~corein               ; combout          ;
-+----------------------------------+----------------------------------+------------------+
++--------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                   ;
++------------------------------------+------------------------------------+------------------+
+; Node Name                          ; Output Port Name                   ; Output Port Type ;
++------------------------------------+------------------------------------+------------------+
+; |circuito|a                        ; |circuito|a                        ; out              ;
+; |circuito|b                        ; |circuito|b                        ; out              ;
+; |circuito|c                        ; |circuito|c                        ; out              ;
+; |circuito|sa1                      ; |circuito|sa1                      ; pin_out          ;
+; |circuito|sa2                      ; |circuito|sa2                      ; pin_out          ;
+; |circuito|PortaAnd:u10|saida_and~0 ; |circuito|PortaAnd:u10|saida_and~0 ; out0             ;
+; |circuito|PortaAnd:u10|saida_and   ; |circuito|PortaAnd:u10|saida_and   ; out0             ;
+; |circuito|PortaOr4:u9|saida_or~0   ; |circuito|PortaOr4:u9|saida_or~0   ; out0             ;
+; |circuito|PortaOr4:u9|saida_or~1   ; |circuito|PortaOr4:u9|saida_or~1   ; out0             ;
+; |circuito|PortaOr4:u9|saida_or     ; |circuito|PortaOr4:u9|saida_or     ; out0             ;
+; |circuito|PortaAnd:u8|saida_and~0  ; |circuito|PortaAnd:u8|saida_and~0  ; out0             ;
+; |circuito|PortaAnd:u8|saida_and    ; |circuito|PortaAnd:u8|saida_and    ; out0             ;
+; |circuito|PortaAnd:u7|saida_and~0  ; |circuito|PortaAnd:u7|saida_and~0  ; out0             ;
+; |circuito|PortaAnd:u7|saida_and    ; |circuito|PortaAnd:u7|saida_and    ; out0             ;
+; |circuito|PortaAnd:u6|saida_and~0  ; |circuito|PortaAnd:u6|saida_and~0  ; out0             ;
+; |circuito|PortaAnd:u6|saida_and    ; |circuito|PortaAnd:u6|saida_and    ; out0             ;
+; |circuito|PortaAnd:u5|saida_and~0  ; |circuito|PortaAnd:u5|saida_and~0  ; out0             ;
+; |circuito|PortaAnd:u5|saida_and    ; |circuito|PortaAnd:u5|saida_and    ; out0             ;
+; |circuito|PortaOr4:u4|saida_or~0   ; |circuito|PortaOr4:u4|saida_or~0   ; out0             ;
+; |circuito|PortaOr4:u4|saida_or~1   ; |circuito|PortaOr4:u4|saida_or~1   ; out0             ;
+; |circuito|PortaOr4:u4|saida_or     ; |circuito|PortaOr4:u4|saida_or     ; out0             ;
+; |circuito|PortaAnd2:u3|saida_and   ; |circuito|PortaAnd2:u3|saida_and   ; out0             ;
+; |circuito|PortaAnd:u2|saida_and~0  ; |circuito|PortaAnd:u2|saida_and~0  ; out0             ;
+; |circuito|PortaAnd:u2|saida_and    ; |circuito|PortaAnd:u2|saida_and    ; out0             ;
+; |circuito|PortaAnd:u1|saida_and~0  ; |circuito|PortaAnd:u1|saida_and~0  ; out0             ;
+; |circuito|PortaAnd:u1|saida_and    ; |circuito|PortaAnd:u1|saida_and    ; out0             ;
++------------------------------------+------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+----------------------------------------------------------------------------------------+
-; Missing 0-Value Coverage                                                               ;
-+----------------------------------+----------------------------------+------------------+
-; Node Name                        ; Output Port Name                 ; Output Port Type ;
-+----------------------------------+----------------------------------+------------------+
-; |circuito|PortaOr:u4|saida_or~0  ; |circuito|PortaOr:u4|saida_or~0  ; combout          ;
-; |circuito|PortaOr4:u9|saida_or~0 ; |circuito|PortaOr4:u9|saida_or~0 ; combout          ;
-; |circuito|sa1                    ; |circuito|sa1                    ; padio            ;
-; |circuito|sa2                    ; |circuito|sa2                    ; padio            ;
-; |circuito|b                      ; |circuito|b~corein               ; combout          ;
-; |circuito|a                      ; |circuito|a~corein               ; combout          ;
-; |circuito|c                      ; |circuito|c~corein               ; combout          ;
-+----------------------------------+----------------------------------+------------------+
++--------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                   ;
++------------------------------------+------------------------------------+------------------+
+; Node Name                          ; Output Port Name                   ; Output Port Type ;
++------------------------------------+------------------------------------+------------------+
+; |circuito|a                        ; |circuito|a                        ; out              ;
+; |circuito|b                        ; |circuito|b                        ; out              ;
+; |circuito|c                        ; |circuito|c                        ; out              ;
+; |circuito|sa1                      ; |circuito|sa1                      ; pin_out          ;
+; |circuito|sa2                      ; |circuito|sa2                      ; pin_out          ;
+; |circuito|PortaAnd:u10|saida_and~0 ; |circuito|PortaAnd:u10|saida_and~0 ; out0             ;
+; |circuito|PortaAnd:u10|saida_and   ; |circuito|PortaAnd:u10|saida_and   ; out0             ;
+; |circuito|PortaOr4:u9|saida_or~0   ; |circuito|PortaOr4:u9|saida_or~0   ; out0             ;
+; |circuito|PortaOr4:u9|saida_or~1   ; |circuito|PortaOr4:u9|saida_or~1   ; out0             ;
+; |circuito|PortaOr4:u9|saida_or     ; |circuito|PortaOr4:u9|saida_or     ; out0             ;
+; |circuito|PortaAnd:u8|saida_and~0  ; |circuito|PortaAnd:u8|saida_and~0  ; out0             ;
+; |circuito|PortaAnd:u8|saida_and    ; |circuito|PortaAnd:u8|saida_and    ; out0             ;
+; |circuito|PortaAnd:u7|saida_and~0  ; |circuito|PortaAnd:u7|saida_and~0  ; out0             ;
+; |circuito|PortaAnd:u7|saida_and    ; |circuito|PortaAnd:u7|saida_and    ; out0             ;
+; |circuito|PortaAnd:u6|saida_and~0  ; |circuito|PortaAnd:u6|saida_and~0  ; out0             ;
+; |circuito|PortaAnd:u6|saida_and    ; |circuito|PortaAnd:u6|saida_and    ; out0             ;
+; |circuito|PortaAnd:u5|saida_and~0  ; |circuito|PortaAnd:u5|saida_and~0  ; out0             ;
+; |circuito|PortaAnd:u5|saida_and    ; |circuito|PortaAnd:u5|saida_and    ; out0             ;
+; |circuito|PortaOr4:u4|saida_or~0   ; |circuito|PortaOr4:u4|saida_or~0   ; out0             ;
+; |circuito|PortaOr4:u4|saida_or~1   ; |circuito|PortaOr4:u4|saida_or~1   ; out0             ;
+; |circuito|PortaOr4:u4|saida_or     ; |circuito|PortaOr4:u4|saida_or     ; out0             ;
+; |circuito|PortaAnd2:u3|saida_and   ; |circuito|PortaAnd2:u3|saida_and   ; out0             ;
+; |circuito|PortaAnd:u2|saida_and~0  ; |circuito|PortaAnd:u2|saida_and~0  ; out0             ;
+; |circuito|PortaAnd:u2|saida_and    ; |circuito|PortaAnd:u2|saida_and    ; out0             ;
+; |circuito|PortaAnd:u1|saida_and~0  ; |circuito|PortaAnd:u1|saida_and~0  ; out0             ;
+; |circuito|PortaAnd:u1|saida_and    ; |circuito|PortaAnd:u1|saida_and    ; out0             ;
++------------------------------------+------------------------------------+------------------+
 
 
 +---------------------+
@@ -158,7 +195,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Simulator
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Oct 01 14:18:41 2024
+    Info: Processing started: Tue Oct 08 11:08:37 2024
 Info: Command: quartus_sim --simulation_results_format=VWF circuito -c circuito
 Info (324025): Using vector source file "C:/Users/enioa/Desktop/Aulas/aula_01_10/output_files/Waveform.vwf"
 Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
@@ -168,9 +205,9 @@ Info (328053): Simulation coverage is       0.00 %
 Info (328052): Number of transitions in simulation is 0
 Info (324045): Vector file circuito.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4476 megabytes
-    Info: Processing ended: Tue Oct 01 14:18:41 2024
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 4445 megabytes
+    Info: Processing ended: Tue Oct 08 11:08:38 2024
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 

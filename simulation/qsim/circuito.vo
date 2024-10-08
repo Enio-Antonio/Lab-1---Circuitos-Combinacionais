@@ -16,10 +16,10 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "10/01/2024 14:18:28"
+// DATE "10/08/2024 10:58:57"
 
 // 
-// Device: Altera EP2C5T144C6 Package TQFP144
+// Device: Altera EP2C35F672C6 Package FBGA672
 // 
 
 // 
@@ -41,11 +41,11 @@ output 	sa1;
 output 	sa2;
 
 // Design Ports Information
-// sa1	=>  Location: PIN_32,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// sa2	=>  Location: PIN_26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// b	=>  Location: PIN_28,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// a	=>  Location: PIN_27,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// c	=>  Location: PIN_17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// sa1	=>  Location: PIN_AE23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// sa2	=>  Location: PIN_AF23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// a	=>  Location: PIN_N25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// b	=>  Location: PIN_N26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// c	=>  Location: PIN_P25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 
 
 wire gnd;
@@ -62,11 +62,11 @@ tri1 devoe;
 wire \b~combout ;
 wire \a~combout ;
 wire \c~combout ;
-wire \u4|saida_or~0_combout ;
 wire \u9|saida_or~0_combout ;
+wire \u4|saida_or~0_combout ;
 
 
-// Location: PIN_28,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Location: PIN_N26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \b~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -102,7 +102,7 @@ defparam \b~I .output_register_mode = "none";
 defparam \b~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_27,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Location: PIN_N25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \a~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -138,7 +138,7 @@ defparam \a~I .output_register_mode = "none";
 defparam \a~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Location: PIN_P25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \c~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -174,43 +174,43 @@ defparam \c~I .output_register_mode = "none";
 defparam \c~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: LCCOMB_X1_Y5_N16
-cycloneii_lcell_comb \u4|saida_or~0 (
-// Equation(s):
-// \u4|saida_or~0_combout  = (\b~combout  & ((\a~combout ) # (\c~combout )))
-
-	.dataa(\b~combout ),
-	.datab(\a~combout ),
-	.datac(vcc),
-	.datad(\c~combout ),
-	.cin(gnd),
-	.combout(\u4|saida_or~0_combout ),
-	.cout());
-// synopsys translate_off
-defparam \u4|saida_or~0 .lut_mask = 16'hAA88;
-defparam \u4|saida_or~0 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X1_Y5_N26
+// Location: LCCOMB_X64_Y19_N0
 cycloneii_lcell_comb \u9|saida_or~0 (
 // Equation(s):
 // \u9|saida_or~0_combout  = \b~combout  $ (\a~combout  $ (\c~combout ))
 
 	.dataa(\b~combout ),
-	.datab(\a~combout ),
-	.datac(vcc),
+	.datab(vcc),
+	.datac(\a~combout ),
 	.datad(\c~combout ),
 	.cin(gnd),
 	.combout(\u9|saida_or~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \u9|saida_or~0 .lut_mask = 16'h9966;
+defparam \u9|saida_or~0 .lut_mask = 16'hA55A;
 defparam \u9|saida_or~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: PIN_32,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// Location: LCCOMB_X64_Y19_N26
+cycloneii_lcell_comb \u4|saida_or~0 (
+// Equation(s):
+// \u4|saida_or~0_combout  = (\b~combout  & ((\a~combout ) # (\c~combout )))
+
+	.dataa(\b~combout ),
+	.datab(vcc),
+	.datac(\a~combout ),
+	.datad(\c~combout ),
+	.cin(gnd),
+	.combout(\u4|saida_or~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \u4|saida_or~0 .lut_mask = 16'hAAA0;
+defparam \u4|saida_or~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: PIN_AE23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \sa1~I (
-	.datain(\u4|saida_or~0_combout ),
+	.datain(\u9|saida_or~0_combout ),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -244,9 +244,9 @@ defparam \sa1~I .output_register_mode = "none";
 defparam \sa1~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// Location: PIN_AF23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \sa2~I (
-	.datain(\u9|saida_or~0_combout ),
+	.datain(\u4|saida_or~0_combout ),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
