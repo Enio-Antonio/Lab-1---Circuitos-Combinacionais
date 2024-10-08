@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for circuito
-Tue Oct 01 14:10:58 2024
+Tue Oct 08 00:31:38 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -61,7 +61,7 @@ applicable agreement for further details.
 ; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
 ; Revision Name      ; circuito                                                          ;
 ; Device Family      ; Cyclone II                                                        ;
-; Device Name        ; EP2C5T144C6                                                       ;
+; Device Name        ; EP2C35F672C6                                                      ;
 ; Timing Models      ; Final                                                             ;
 ; Delay Model        ; Combined                                                          ;
 ; Rise/Fall Delays   ; Unavailable                                                       ;
@@ -126,12 +126,12 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; a          ; sa1         ; 9.346 ;       ;       ; 9.346 ;
-; a          ; sa2         ; 8.889 ; 8.889 ; 8.889 ; 8.889 ;
-; b          ; sa1         ; 9.634 ;       ;       ; 9.634 ;
-; b          ; sa2         ; 9.179 ; 9.179 ; 9.179 ; 9.179 ;
-; c          ; sa1         ; 5.358 ;       ;       ; 5.358 ;
-; c          ; sa2         ; 4.904 ; 4.904 ; 4.904 ; 4.904 ;
+; a          ; sa1         ; 6.343 ;       ;       ; 6.343 ;
+; a          ; sa2         ; 6.361 ; 6.361 ; 6.361 ; 6.361 ;
+; b          ; sa1         ; 6.518 ;       ;       ; 6.518 ;
+; b          ; sa2         ; 6.537 ; 6.537 ; 6.537 ; 6.537 ;
+; c          ; sa1         ; 6.214 ;       ;       ; 6.214 ;
+; c          ; sa2         ; 6.227 ; 6.227 ; 6.227 ; 6.227 ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -140,12 +140,12 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; a          ; sa1         ; 9.346 ;       ;       ; 9.346 ;
-; a          ; sa2         ; 8.889 ; 8.889 ; 8.889 ; 8.889 ;
-; b          ; sa1         ; 9.634 ;       ;       ; 9.634 ;
-; b          ; sa2         ; 9.179 ; 9.179 ; 9.179 ; 9.179 ;
-; c          ; sa1         ; 5.358 ;       ;       ; 5.358 ;
-; c          ; sa2         ; 4.904 ; 4.904 ; 4.904 ; 4.904 ;
+; a          ; sa1         ; 6.343 ;       ;       ; 6.343 ;
+; a          ; sa2         ; 6.361 ; 6.361 ; 6.361 ; 6.361 ;
+; b          ; sa1         ; 6.518 ;       ;       ; 6.518 ;
+; b          ; sa2         ; 6.537 ; 6.537 ; 6.537 ; 6.537 ;
+; c          ; sa1         ; 6.214 ;       ;       ; 6.214 ;
+; c          ; sa2         ; 6.227 ; 6.227 ; 6.227 ; 6.227 ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -184,12 +184,12 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; a          ; sa1         ; 5.282 ;       ;       ; 5.282 ;
-; a          ; sa2         ; 5.024 ; 5.024 ; 5.024 ; 5.024 ;
-; b          ; sa1         ; 5.409 ;       ;       ; 5.409 ;
-; b          ; sa2         ; 5.145 ; 5.145 ; 5.145 ; 5.145 ;
-; c          ; sa1         ; 2.815 ;       ;       ; 2.815 ;
-; c          ; sa2         ; 2.560 ; 2.560 ; 2.560 ; 2.560 ;
+; a          ; sa1         ; 3.296 ;       ;       ; 3.296 ;
+; a          ; sa2         ; 3.308 ; 3.308 ; 3.308 ; 3.308 ;
+; b          ; sa1         ; 3.380 ;       ;       ; 3.380 ;
+; b          ; sa2         ; 3.386 ; 3.386 ; 3.386 ; 3.386 ;
+; c          ; sa1         ; 3.248 ;       ;       ; 3.248 ;
+; c          ; sa2         ; 3.256 ; 3.256 ; 3.256 ; 3.256 ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -198,12 +198,12 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; a          ; sa1         ; 5.282 ;       ;       ; 5.282 ;
-; a          ; sa2         ; 5.024 ; 5.024 ; 5.024 ; 5.024 ;
-; b          ; sa1         ; 5.409 ;       ;       ; 5.409 ;
-; b          ; sa2         ; 5.145 ; 5.145 ; 5.145 ; 5.145 ;
-; c          ; sa1         ; 2.815 ;       ;       ; 2.815 ;
-; c          ; sa2         ; 2.560 ; 2.560 ; 2.560 ; 2.560 ;
+; a          ; sa1         ; 3.296 ;       ;       ; 3.296 ;
+; a          ; sa2         ; 3.308 ; 3.308 ; 3.308 ; 3.308 ;
+; b          ; sa1         ; 3.380 ;       ;       ; 3.380 ;
+; b          ; sa2         ; 3.386 ; 3.386 ; 3.386 ; 3.386 ;
+; c          ; sa1         ; 3.248 ;       ;       ; 3.248 ;
+; c          ; sa2         ; 3.256 ; 3.256 ; 3.256 ; 3.256 ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -222,12 +222,12 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; a          ; sa1         ; 9.346 ;       ;       ; 9.346 ;
-; a          ; sa2         ; 8.889 ; 8.889 ; 8.889 ; 8.889 ;
-; b          ; sa1         ; 9.634 ;       ;       ; 9.634 ;
-; b          ; sa2         ; 9.179 ; 9.179 ; 9.179 ; 9.179 ;
-; c          ; sa1         ; 5.358 ;       ;       ; 5.358 ;
-; c          ; sa2         ; 4.904 ; 4.904 ; 4.904 ; 4.904 ;
+; a          ; sa1         ; 6.343 ;       ;       ; 6.343 ;
+; a          ; sa2         ; 6.361 ; 6.361 ; 6.361 ; 6.361 ;
+; b          ; sa1         ; 6.518 ;       ;       ; 6.518 ;
+; b          ; sa2         ; 6.537 ; 6.537 ; 6.537 ; 6.537 ;
+; c          ; sa1         ; 6.214 ;       ;       ; 6.214 ;
+; c          ; sa2         ; 6.227 ; 6.227 ; 6.227 ; 6.227 ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -236,12 +236,12 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; a          ; sa1         ; 5.282 ;       ;       ; 5.282 ;
-; a          ; sa2         ; 5.024 ; 5.024 ; 5.024 ; 5.024 ;
-; b          ; sa1         ; 5.409 ;       ;       ; 5.409 ;
-; b          ; sa2         ; 5.145 ; 5.145 ; 5.145 ; 5.145 ;
-; c          ; sa1         ; 2.815 ;       ;       ; 2.815 ;
-; c          ; sa2         ; 2.560 ; 2.560 ; 2.560 ; 2.560 ;
+; a          ; sa1         ; 3.296 ;       ;       ; 3.296 ;
+; a          ; sa2         ; 3.308 ; 3.308 ; 3.308 ; 3.308 ;
+; b          ; sa1         ; 3.380 ;       ;       ; 3.380 ;
+; b          ; sa2         ; 3.386 ; 3.386 ; 3.386 ; 3.386 ;
+; c          ; sa1         ; 3.248 ;       ;       ; 3.248 ;
+; c          ; sa2         ; 3.256 ; 3.256 ; 3.256 ; 3.256 ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -283,10 +283,12 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Oct 01 14:10:57 2024
+    Info: Processing started: Tue Oct 08 00:31:38 2024
 Info: Command: quartus_sta circuito -c circuito
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'circuito.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -314,9 +316,9 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4534 megabytes
-    Info: Processing ended: Tue Oct 01 14:10:58 2024
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4540 megabytes
+    Info: Processing ended: Tue Oct 08 00:31:38 2024
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 
